@@ -53,7 +53,8 @@ app.get('/health', (req, res) => {
   res.json({ status: 'healthy' });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
   console.log(`POST endpoint → http://localhost:${PORT}/solve`);
 });
+
